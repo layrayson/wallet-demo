@@ -1,7 +1,8 @@
-import { Text, View, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import React from 'react';
 import { AppColors } from '../../../theme/color';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { AppText } from '../../custom/AppText';
 
 type Props = {
   amount: number;
@@ -11,32 +12,32 @@ const OverAllBalanceDisplay = ({ amount, increment }: Props) => {
   return (
     <View style={styles.container}>
       <View style={styles.balanceHeader}>
-        <Text style={styles.balanceHeaderText}>
+        <AppText style={styles.balanceHeaderText}>
           Total balance in {" "}
-          <Text style={styles.balanceHeaderUSD}>USD</Text>
-        </Text>
+          <AppText style={styles.balanceHeaderUSD}>USD</AppText>
+        </AppText>
       </View>
       <View style={styles.balanceAmountContainer}>
-        <Text style={styles.balanceAmountText}>
+        <AppText style={styles.balanceAmountText}>
           $
           {amount.toLocaleString('en-US', {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
           })}
-        </Text>
+        </AppText>
       </View>
       <View style={styles.incrementContainer}>
         <Icon name="trending-up" size={16} color={AppColors.green[500]} style={styles.incrementIcon} />
-        <Text style={styles.incrementText}>
+        <AppText style={styles.incrementText}>
           +$
           {increment.toLocaleString('en-US', {
             minimumFractionDigits: 2,
             maximumFractionDigits: 2,
           })}
-        </Text>
-        <Text style={styles.incrementTotalText}>
+        </AppText>
+        <AppText style={styles.incrementTotalText}>
           total
-        </Text>
+        </AppText>
       </View>
     </View>
   );

@@ -1,7 +1,7 @@
 // components/AppText.tsx
 import React from 'react';
 import { Text, TextProps, StyleSheet } from 'react-native';
-import { useAppTheme } from '../theme/ThemeContext';
+import { useAppTheme } from '../../../theme/ThemeContext';
 
 export const AppText = ({ style, ...props }: TextProps) => {
     const { theme } = useAppTheme();
@@ -16,7 +16,7 @@ export const AppText = ({ style, ...props }: TextProps) => {
 
 const styles = StyleSheet.create({
     text: {
-        fontFamily: 'Inter-Regular',
+        fontFamily: 'Roboto-Regular',
         fontSize: 16,
     },
 });
