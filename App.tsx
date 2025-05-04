@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigator from './src/navigator/Navigator';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
 
 export default function App() {
   const queryClient = new QueryClient();
@@ -10,7 +10,6 @@ export default function App() {
       <QueryClientProvider client={queryClient}>
         <Navigator />
       </QueryClientProvider>
-
     </>
   );
 }

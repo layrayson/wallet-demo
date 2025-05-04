@@ -1,4 +1,3 @@
-
 export type RootStackParamList = {
-    HomeTab: undefined;
+  HomeTab: undefined;
 };

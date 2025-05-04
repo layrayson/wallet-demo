@@ -1,12 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import {View, Text} from 'react-native';
+import React from 'react';
 
 const AssetsScreen = () => {
-    return (
-        <View>
-            <Text>AssetsScreen</Text>
-        </View>
-    )
-}
+  return (
+    <View>
+      <Text>AssetsScreen</Text>
+    </View>
+  );
+};
 
-export default AssetsScreen
+export default AssetsScreen;
