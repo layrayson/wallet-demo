@@ -1,43 +1,40 @@
-import { View, StyleSheet } from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import React from 'react';
-import { AppColors } from '../../../theme/color';
+import {AppColors} from '../../../theme/color';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { AppText } from '../../custom/AppText';
+import {AppText} from '../../custom/AppText';
+import {formatAmount} from '../../../helpers/formatAmount.helper';
 
 type Props = {
   amount: number;
   increment: number;
 };
-const OverAllBalanceDisplay = ({ amount, increment }: Props) => {
+const OverAllBalanceDisplay = ({amount, increment}: Props) => {
   return (
     <View style={styles.container}>
       <View style={styles.balanceHeader}>
         <AppText style={styles.balanceHeaderText}>
-          Total balance in {" "}
+          Total balance in{' '}
           <AppText style={styles.balanceHeaderUSD}>USD</AppText>
         </AppText>
       </View>
       <View style={styles.balanceAmountContainer}>
         <AppText style={styles.balanceAmountText}>
-          $
-          {amount.toLocaleString('en-US', {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2,
-          })}
+          ${formatAmount(amount)}
         </AppText>
       </View>
       <View style={styles.incrementContainer}>
-        <Icon name="trending-up" size={16} color={AppColors.green[500]} style={styles.incrementIcon} />
+        <Icon
+          name="trending-up"
+          size={16}
+          color={AppColors.green[500]}
+          style={styles.incrementIcon}
+        />
         <AppText style={styles.incrementText}>
           +$
-          {increment.toLocaleString('en-US', {
-            minimumFractionDigits: 2,
-            maximumFractionDigits: 2,
-          })}
+          {formatAmount(increment)}
         </AppText>
-        <AppText style={styles.incrementTotalText}>
-          total
-        </AppText>
+        <AppText style={styles.incrementTotalText}>total</AppText>
       </View>
     </View>
   );
@@ -70,7 +67,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'flex-start',
-    gap: 4
+    gap: 4,
   },
   incrementIcon: {
     padding: 0,

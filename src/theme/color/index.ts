@@ -36,7 +36,6 @@ export const AppColors = {
   },
 };
 
-
 export const lightTheme = {
   background: '#FFFFFF',
   text: '#1F1E2A',

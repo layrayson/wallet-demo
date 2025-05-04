@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigator from './src/navigator/Navigator';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { ThemeProvider } from './src/theme/ThemeContext';
+import {QueryClient, QueryClientProvider} from '@tanstack/react-query';
+import {ThemeProvider} from './src/theme/ThemeContext';
 
 export default function App() {
   const queryClient = new QueryClient();
