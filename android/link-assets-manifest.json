@@ -2,68 +2,76 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/roboto/Roboto-Black.ttf",
-      "sha1": "9eb4f9d1aaceb455483d15ce81fd6dcb1fbdb062"
+      "path": "assets/fonts/inter/Inter-Black.otf",
+      "sha1": "68c456410eebd937a6496fff66d71311c8e844f7"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-BlackItalic.ttf",
-      "sha1": "67907afda4a0fc301e49f6befa402317840d413b"
+      "path": "assets/fonts/inter/Inter-BlackItalic.otf",
+      "sha1": "cf06030ff6708282c674fb6047b9723b127c41e9"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-Bold.ttf",
-      "sha1": "d313ab2c45756bf4e972647f5b2ad691ad250990"
+      "path": "assets/fonts/inter/Inter-Bold.otf",
+      "sha1": "c376b59a48facc029b9a384cc86f02992b2171ea"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-BoldCondensed.ttf",
-      "sha1": "55c1735e4085089e2ea3b03e9809fb933c3b5db7"
+      "path": "assets/fonts/inter/Inter-BoldItalic.otf",
+      "sha1": "e565afbf6c3c06bb50da31475f98784cf391e9a8"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-BoldCondensedItalic.ttf",
-      "sha1": "4d713416816079267467f0abf05e9491a58b7544"
+      "path": "assets/fonts/inter/Inter-ExtraBold.otf",
+      "sha1": "2c724cc7236610e53e2060fd57b86c410889538d"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-BoldItalic.ttf",
-      "sha1": "9cfd661f459c98f17d3c88191d9df87b960c2ae6"
+      "path": "assets/fonts/inter/Inter-ExtraBoldItalic.otf",
+      "sha1": "ca9b0143218b83936b50c8990da23c5c1cf009bf"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-Condensed.ttf",
-      "sha1": "25e47bf261a07aa014c90bca273542907f7461cd"
+      "path": "assets/fonts/inter/Inter-ExtraLight-BETA.otf",
+      "sha1": "475fb0d042b74667d43ceadd8d05edfab38b01f5"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-CondensedItalic.ttf",
-      "sha1": "03f4e41643b88ef712ed1b45029a020ee6bcea74"
+      "path": "assets/fonts/inter/Inter-ExtraLightItalic-BETA.otf",
+      "sha1": "4e768f410f340a7d35018396882e821412d9d087"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-Italic.ttf",
-      "sha1": "2a5ad885c7e58322832e6e651156ffc131e27f2e"
+      "path": "assets/fonts/inter/Inter-Italic.otf",
+      "sha1": "38db56ca1d9e726b5c6db786a8c53010e252c9f5"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-Light.ttf",
-      "sha1": "7d0421de4e1398fb9087378a9ccc9297bdbc84b9"
+      "path": "assets/fonts/inter/Inter-Light-BETA.otf",
+      "sha1": "4e0d5eda5045cbcbac16dd03920232a84ef07053"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-LightItalic.ttf",
-      "sha1": "96a08acd0c07254c1ce8002db5ab7b67659e9f21"
+      "path": "assets/fonts/inter/Inter-LightItalic-BETA.otf",
+      "sha1": "d49756fdb028a473e127d4b4fe0af7fb7b8b4d65"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-Medium.ttf",
-      "sha1": "01d4ccbdf1ba0a8e14497521686e1246f8dc57c4"
+      "path": "assets/fonts/inter/Inter-Medium.otf",
+      "sha1": "699375c590a1879bde1b53a7949b2659292ee3b0"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-MediumItalic.ttf",
-      "sha1": "20f9a9872535ea3f82c1641249944be9ed9968e7"
+      "path": "assets/fonts/inter/Inter-MediumItalic.otf",
+      "sha1": "4ed021c1f5d9af1b5600770082e1d9d8b47cf38c"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-Regular.ttf",
-      "sha1": "a18dcbf99c8d2325c2fbf22a64e8cc28a0cf4d3b"
+      "path": "assets/fonts/inter/Inter-Regular.otf",
+      "sha1": "efd846697930d88ab013b64d4e0f2129cd7e971f"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-Thin.ttf",
-      "sha1": "4e63a47d2e8f26886bb414b9eb54b024742d20f2"
+      "path": "assets/fonts/inter/Inter-SemiBold.otf",
+      "sha1": "ff17bae635a4bffbaa773aa18ef3cfd8d6f41a17"
     },
     {
-      "path": "assets/fonts/roboto/Roboto-ThinItalic.ttf",
-      "sha1": "a20b9b2edee1de838aab10fe4060f8e0dc5116cd"
+      "path": "assets/fonts/inter/Inter-SemiBoldItalic.otf",
+      "sha1": "7b1e47b951753a7ae241b7f6b05c9e9f41f0fced"
+    },
+    {
+      "path": "assets/fonts/inter/Inter-Thin-BETA.otf",
+      "sha1": "352e52b71c4a96eff8acddfa30625f6ea13d0dde"
+    },
+    {
+      "path": "assets/fonts/inter/Inter-ThinItalic-BETA.otf",
+      "sha1": "90e9ca831b887bb67b1aa612511ce5bcc918df0b"
     }
   ]
 }
