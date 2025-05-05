@@ -1,18 +1,18 @@
-import {View, ScrollView, StyleSheet} from 'react-native';
-import React, {useMemo, useState} from 'react';
+import { View, ScrollView, StyleSheet } from 'react-native';
+import React, { useMemo, useState } from 'react';
 import OverAllBalanceDisplay from '../../../components/shared/OverAllBalanceDisplay';
-import {AppColors} from '../../../theme/color';
-import {AppText} from '../../../components/custom/AppText';
+import { AppColors } from '../../../theme/color';
+import { AppText } from '../../../components/custom/AppText';
 import CoinsList from '../../../components/assets/CoinsList';
-import {useFetchMarketTrends} from '../../../hooks/trends/index.hook';
-import {CoinAsset} from '../../../types/trends/res/index.type';
+import { useFetchMarketTrends } from '../../../hooks/trends/index.hook';
+import { CoinAsset } from '../../../types/trends/res/index.type';
 import SearchBar from '../../../components/shared/SearchBar';
 
 const AssetsScreen = () => {
   const [amount] = useState(10456.9084);
   const [increment] = useState(65.909);
 
-  const {data: coinPriceResponse} = useFetchMarketTrends({
+  const { data: coinPriceResponse } = useFetchMarketTrends({
     vs_currency: 'usd',
     ids: 'bitcoin,ethereum,usd-coin',
   });
@@ -21,20 +21,22 @@ const AssetsScreen = () => {
     () =>
       coinPriceResponse
         ? coinPriceResponse.map(el => ({
-            ...el,
-            usdConversion:
-              amount *
-              (el.id == 'bitcoin' ? 0.2 : el.id == 'ethereum' ? 0.3 : 0.5),
-            original:
-              (amount *
-                (el.id == 'bitcoin' ? 0.2 : el.id == 'ethereum' ? 0.3 : 0.5)) /
-              el.current_price,
-          }))
+          ...el,
+          usdConversion:
+            amount *
+            (el.id == 'bitcoin' ? 0.2 : el.id == 'ethereum' ? 0.3 : 0.5),
+          original:
+            (amount *
+              (el.id == 'bitcoin' ? 0.2 : el.id == 'ethereum' ? 0.3 : 0.5)) /
+            el.current_price,
+        }))
         : [],
     [coinPriceResponse, amount],
   );
   return (
     <ScrollView
+      testID='assets-screen'
+
       contentContainerStyle={styles.container}
       showsVerticalScrollIndicator={false}
       style={styles.scrollView}>

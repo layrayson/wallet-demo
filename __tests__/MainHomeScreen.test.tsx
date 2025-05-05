@@ -1,4 +1,3 @@
-// __tests__/MainHomeScreen.test.tsx
 import React from 'react';
 import { render, fireEvent, waitFor } from '@testing-library/react-native';
 import * as trendsHook from '../src/hooks/trends/index.hook';

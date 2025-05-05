@@ -22,6 +22,7 @@ const MainHomeScreen = () => {
   );
   return (
     <ScrollView
+      testID='main-home-screen'
       contentContainerStyle={styles.container}
       showsVerticalScrollIndicator={false}
       style={styles.scrollView}>
