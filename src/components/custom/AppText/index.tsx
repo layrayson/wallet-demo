@@ -11,7 +11,7 @@ export const AppText = ({style, ...props}: TextProps) => {
 
 const styles = StyleSheet.create({
   text: {
-    fontFamily: 'Roboto-Regular',
+    fontFamily: 'Inter-Regular',
     fontSize: 16,
   },
 });

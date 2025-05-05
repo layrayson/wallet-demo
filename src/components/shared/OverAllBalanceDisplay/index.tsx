@@ -3,7 +3,7 @@ import React from 'react';
 import {AppColors} from '../../../theme/color';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {AppText} from '../../custom/AppText';
-import {formatAmount} from '../../../helpers/formatAmount.helper';
+import {formatAmount} from '../../../helpers/format_amount.helper';
 
 type Props = {
   amount: number;
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
   },
   balanceAmountText: {
     fontSize: 40,
-    fontWeight: 700,
+    fontWeight: 500,
     color: AppColors.gray[900],
   },
   incrementContainer: {
