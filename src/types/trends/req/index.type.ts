@@ -3,7 +3,4 @@ export type MarketTrendRequest = {
   ids: string;
 };
 
-export type CoinPriceRequest = {
-  ids: string;
-  vs_currencies: string;
-};
+
