@@ -1,17 +1,17 @@
-import {ScrollView, TouchableOpacity, View, StyleSheet} from 'react-native';
-import React, {useMemo, useState} from 'react';
+import { ScrollView, TouchableOpacity, View, StyleSheet } from 'react-native';
+import React, { useMemo, useState } from 'react';
 import OverAllBalanceDisplay from '../../../components/shared/OverAllBalanceDisplay';
-import {AppText} from '../../../components/custom/AppText';
-import {AppColors} from '../../../theme/color';
+import { AppText } from '../../../components/custom/AppText';
+import { AppColors } from '../../../theme/color';
 import MarketTrendList from '../../../components/home/MarketTrendList';
-import {useFetchMarketTrends} from '../../../hooks/trends/index.hook';
-import {MarketTrendResponse} from '../../../types/trends/res/index.type';
+import { useFetchMarketTrends } from '../../../hooks/trends/index.hook';
+import { MarketTrendResponse } from '../../../types/trends/res/index.type';
 import SearchBar from '../../../components/shared/SearchBar';
 
 const MainHomeScreen = () => {
   const [amount] = useState(10456.9084);
   const [increment] = useState(65.909);
-  const {data: fetchMarketTrendsResponse} = useFetchMarketTrends({
+  const { data: fetchMarketTrendsResponse } = useFetchMarketTrends({
     vs_currency: 'usd',
     ids: 'bitcoin,ethereum,usd-coin',
   });
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
   },
   marketTrendHeaderText: {
     fontSize: 24,
-    fontWeight: 700,
+    fontFamily: "Inter-Bold",
   },
   seeAllText: {
     fontWeight: 500,
