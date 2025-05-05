@@ -35,4 +35,3 @@ export const AppColors = {
     900: '#5A0000',
   },
 };
-

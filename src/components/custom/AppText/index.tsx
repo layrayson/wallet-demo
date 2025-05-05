@@ -1,9 +1,8 @@
 // components/AppText.tsx
 import React from 'react';
-import { Text, TextProps, StyleSheet } from 'react-native';
+import {Text, TextProps, StyleSheet} from 'react-native';
 
-export const AppText = ({ style, ...props }: TextProps) => {
-
+export const AppText = ({style, ...props}: TextProps) => {
   return <Text {...props} style={[styles.text, style]} />;
 };
 

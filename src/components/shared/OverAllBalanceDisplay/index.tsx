@@ -1,20 +1,20 @@
-import { View, StyleSheet } from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import React from 'react';
-import { AppColors } from '../../../theme/color';
+import {AppColors} from '../../../theme/color';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { AppText } from '../../custom/AppText';
-import { formatAmount } from '../../../helpers/format_amount.helper';
+import {AppText} from '../../custom/AppText';
+import {formatAmount} from '../../../helpers/format_amount.helper';
 
 type Props = {
   amount: number;
   increment: number;
 };
-const OverAllBalanceDisplay = ({ amount, increment }: Props) => {
+const OverAllBalanceDisplay = ({amount, increment}: Props) => {
   return (
     <View style={styles.container}>
       <View style={styles.balanceHeader}>
         <AppText style={styles.balanceHeaderText}>
-          <AppText> Total balance in</AppText>{" "}
+          <AppText> Total balance in</AppText>{' '}
           <AppText style={styles.balanceHeaderUSD}>USD</AppText>
         </AppText>
       </View>
@@ -30,7 +30,6 @@ const OverAllBalanceDisplay = ({ amount, increment }: Props) => {
           color={AppColors.green[500]}
           style={styles.incrementIcon}
           testID="trending-up-icon"
-
         />
         <AppText style={styles.incrementText}>
           +$
@@ -50,10 +49,10 @@ const styles = StyleSheet.create({
   balanceHeaderText: {
     fontSize: 16,
     color: AppColors.gray[500],
-    fontFamily: "Inter-Medium",
+    fontFamily: 'Inter-Medium',
   },
   balanceHeaderUSD: {
-    fontFamily: "Inter-Bold",
+    fontFamily: 'Inter-Bold',
     color: AppColors.gray[700],
   },
   balanceAmountContainer: {
@@ -61,7 +60,7 @@ const styles = StyleSheet.create({
   },
   balanceAmountText: {
     fontSize: 40,
-    fontFamily: "Inter-Bold",
+    fontFamily: 'Inter-Bold',
     color: AppColors.gray[900],
   },
   incrementContainer: {

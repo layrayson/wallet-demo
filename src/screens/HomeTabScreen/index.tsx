@@ -1,21 +1,21 @@
-import { SafeAreaView, StatusBar, View } from 'react-native';
+import {SafeAreaView, StatusBar, View} from 'react-native';
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MainHomeScreen from '../tabs/MainHomeScreen';
 import AssetsScreen from '../tabs/AssetsScreen';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { AppText } from '../../components/custom/AppText';
-import { AppColors } from '../../theme/color';
+import {AppText} from '../../components/custom/AppText';
+import {AppColors} from '../../theme/color';
 
 const Tab = createBottomTabNavigator();
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{flex: 1}}>
       <StatusBar backgroundColor="white" barStyle="dark-content" />
 
       <Tab.Navigator
-        screenOptions={({ route }) => ({
+        screenOptions={({route}) => ({
           headerShown: false,
           tabBarShowLabel: false,
 
@@ -28,7 +28,7 @@ const HomeScreen = () => {
           },
           tabBarActiveTintColor: AppColors.green[500],
           tabBarInactiveTintColor: '#000000',
-          tabBarIcon: ({ color }) => {
+          tabBarIcon: ({color}) => {
             return (
               <View testID={route.name === 'Home' ? 'home-tab' : 'assets-tab'}>
                 <View
@@ -42,14 +42,13 @@ const HomeScreen = () => {
                     flex: 1,
                     justifyContent: 'center',
                     alignItems: 'center',
-                  }}
-                >
+                  }}>
                   {route.name === 'Home' ? (
                     <Icon name="home-outline" size={24} color={color} />
                   ) : (
                     <Icon name="wallet-outline" size={24} color={color} />
                   )}
-                  <AppText style={{ color, marginTop: 1, fontSize: 12 }}>
+                  <AppText style={{color, marginTop: 1, fontSize: 12}}>
                     {route.name}
                   </AppText>
                 </View>
