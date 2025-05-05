@@ -14,7 +14,7 @@ const OverAllBalanceDisplay = ({ amount, increment }: Props) => {
     <View style={styles.container}>
       <View style={styles.balanceHeader}>
         <AppText style={styles.balanceHeaderText}>
-          <AppText> Total balance in</AppText>
+          <AppText> Total balance in</AppText>{" "}
           <AppText style={styles.balanceHeaderUSD}>USD</AppText>
         </AppText>
       </View>
