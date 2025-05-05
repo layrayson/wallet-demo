@@ -12,9 +12,9 @@ type Props = {
 
 const MarketPriceTile = ({ name, image, amount }: Props) => {
     return (
-        <View style={styles.container}>
+        <View style={styles.container} testID='market-price-tile'>
             <View style={styles.imageContainer}>
-                <Image source={{ uri: image }} style={styles.image} resizeMode="cover" />
+                <Image source={{ uri: image }} style={styles.image} resizeMode="cover" testID="coin-image" />
             </View>
             <View style={styles.textContainer}>
                 <AppText style={styles.nameText}>{name}</AppText>
