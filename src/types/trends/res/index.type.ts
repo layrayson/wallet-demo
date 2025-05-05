@@ -27,4 +27,21 @@ export type Trend = {
   last_updated: string;
 };
 
-export type TrendResponse = Trend[];
+export type MarketTrendResponse = Trend[];
+
+export type CoinPriceByUSDResponse = {
+  bitcoin: {
+    usd: number;
+  };
+  ethereum: {
+    usd: number;
+  };
+  'usd-coin': {
+    usd: number;
+  };
+};
+
+export type CoinAsset = Trend & {
+  usdConversion: number;
+  original: number;
+};

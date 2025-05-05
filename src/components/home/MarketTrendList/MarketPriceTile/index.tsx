@@ -2,7 +2,7 @@ import {Image, StyleSheet, View} from 'react-native';
 import React from 'react';
 import {AppColors} from '../../../../theme/color';
 import {AppText} from '../../../custom/AppText';
-import {formatAmount} from '../../../../helpers/formatAmount.helper';
+import {formatAmount} from '../../../../helpers/format_amount.helper';
 
 type Props = {
   name: string;
