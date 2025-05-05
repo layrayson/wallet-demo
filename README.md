@@ -21,3 +21,13 @@ To run the app, follow these steps:
 Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app.
 
 # Congratulations! :tada:
+
+### Implementation Overview
+
+Used a bare React Native project (without Expo) to keep the build size minimal, since it was a small project
+Global state management and persistent storage (e.g., Redux or AsyncStorage) were intentionally excluded since the project’s scope didn’t require them.
+No authentication was implemented because the public API used didn’t support it.
+
+### Opportunities for Improvement
+
+Adding a skeleton loader as a placeholder when fetching data
