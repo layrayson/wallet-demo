@@ -1,12 +1,14 @@
 import axios from 'axios';
+import Config from 'react-native-config';
+
 
 const axiosInstance = axios.create({
-  baseURL: 'https://api.coingecko.com/api/v3',
+  baseURL: Config.REACT_APP_BASE_URL,
   timeout: 115000,
   headers: {
     'Content-Type': 'application/json',
     accept: 'application/json',
-    'x-cg-demo-api-key': 'CG-LkR2R5QmVzgRD9QnCUdMMZSD',
+    'x-cg-demo-api-key': Config.REACT_APP_API_KEY,
   },
 });
 
@@ -19,4 +21,4 @@ axiosInstance.interceptors.response.use(
   },
 );
 
-export {axiosInstance};
+export { axiosInstance };
