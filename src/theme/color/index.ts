@@ -36,16 +36,3 @@ export const AppColors = {
   },
 };
 
-export const lightTheme = {
-  background: '#FFFFFF',
-  text: '#1F1E2A',
-  primary: '#358248',
-};
-
-export const darkTheme = {
-  background: '#1F1E2A',
-  text: '#FFFFFF',
-  primary: '#2E865F',
-};
-
-export type ThemeType = typeof lightTheme;
