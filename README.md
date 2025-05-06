@@ -1,11 +1,5 @@
 # Setup Instructions
 
-Before proceeding, ensure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions for both Android and iOS.
-
-# Running the App
-
-To run the app, follow these steps:
-
 ### For Android
 
 1. Start Metro by running `npm start` or `yarn start` from the project root.
@@ -16,18 +10,16 @@ To run the app, follow these steps:
 1. Start Metro by running `npm start` or `yarn start` from the project root.
 2. In a new terminal, run `npm run ios` or `yarn ios` to start the app.
 
-### For iOS
+# Implementation Overview
 
-Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app.
+1. I used a bare React Native project (without Expo) to keep the build size minimal, since it was a small project
 
-# Congratulations! :tada:
-
-### Implementation Overview
-
-1. Used a bare React Native project (without Expo) to keep the build size minimal, since it was a small project
 2. Global state management and persistent storage (e.g., Redux or AsyncStorage) were intentionally excluded since the project’s scope didn’t require them.
-3. No authentication was implemented because the public API used didn’t support it.
 
-### Opportunities for Improvement
+3. I named files based on their role—like auth.hook.ts for hooks, auth.service.ts for services, and format_text.helper.ts for helpers—to keep things clear and organized.
+
+4. No authentication was implemented because the public API used didn’t support it.
+
+# Opportunities for Improvement
 
 1. Adding a skeleton loader as a placeholder when fetching data
